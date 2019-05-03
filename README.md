@@ -1,4 +1,5 @@
-#ConstraintLayout QuickStart
+# ConstraintLayout QuickStart
+
 > 필수기능만 빠르게 경험하기. Constraint는 압박이란 뜻으로 View의 위치를 압박으로 지정한다. 마치 줄로 사방을 연결한다고 생각하면 된다. 
 
 1. 위치를 지정하는 Constraint 지정 프로퍼티 
