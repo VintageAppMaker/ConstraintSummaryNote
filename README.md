@@ -28,7 +28,8 @@ example
 을 기준으로 값을 변경하여 비율로 이동한다. 
 
 example
-~~~
+
+~~~xml
 app:layout_constraintHorizontal_bias="0.0"
 app:layout_constraintVertical_bias="0.224"
 ~~~
@@ -36,13 +37,14 @@ app:layout_constraintVertical_bias="0.224"
 3. 전체크기는 match_parents가 아니라 match_constraint이며 0dp로 표시한다. 
 
 디자인모드에서 constraint를 클릭하며 wrap, fixed, match 형식으로 설정할 수도 있다. 
-~~~
-android:layout_width="0dp"            
+
+~~~xml
+android:layout_width="0dp"
 ~~~
 
 4. 크기 및 절대값 이동은 margin으로 처리
 
-~~~
+~~~xml
 <Button
             android:text="4. bias 1.0 margin 20"
             android:layout_width="wrap_content"
@@ -59,11 +61,11 @@ android:layout_width="0dp"
 5. 가로세로 비율 
 
 가로 또는 세로 중 하나는 0dp이어야 한다.  
-~~~
+~~~xml
 app:layout_constraintDimensionRatio = 가로:세로
 ~~~
 
-~~~
+~~~xml
 <!--app:layout_constraintDimensionRatio = 가로:세로-->
     <Button
             android:layout_width="100dp"
@@ -76,13 +78,13 @@ app:layout_constraintDimensionRatio = 가로:세로
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintVertical_bias="0.296"
             app:layout_constraintHorizontal_bias="0.051"/>
-~~~
+~~~xml
 
 6. GuideLine
 
 화면설계에 도움되는 것. 실제로는 안보임. horizontal, vertical이 반대임. 세밀한 화면을 설계할 것이라면 사용하기를 권장함. 
 
-~~~
+~~~xml
 <!--horizontal, vertical이 반대임-->
     <!--horizontal, end-->
     <android.support.constraint.Guideline
