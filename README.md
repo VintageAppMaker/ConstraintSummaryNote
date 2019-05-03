@@ -4,12 +4,12 @@
 1. 위치를 지정하는 Constraint 지정 프로퍼티 
 
 영어문장처럼 이해하면 쉽다. 
-~~~
+~~~xml
 app:layout_constraint[시작]_to[종착]of="View"
 ~~~
 
 example
-~~~
+~~~xml
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintRight_toLeftOf="parent"
@@ -20,7 +20,7 @@ example
 
 2. bias는 위치관련 비율이다. 
 
-~~~
+~~~xml
 0.5 중간 
 0.0 왼쪽 
 1.0 오른쪽 
@@ -78,10 +78,10 @@ app:layout_constraintDimensionRatio = 가로:세로
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintVertical_bias="0.296"
             app:layout_constraintHorizontal_bias="0.051"/>
-~~~xml
+~~~
+
 
 6. GuideLine
-
 화면설계에 도움되는 것. 실제로는 안보임. horizontal, vertical이 반대임. 세밀한 화면을 설계할 것이라면 사용하기를 권장함. 
 
 ~~~xml
